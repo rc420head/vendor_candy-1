@@ -228,6 +228,7 @@ PRODUCT_PACKAGE_OVERLAYS += \
     vendor/candy/overlay/common \
 
 PRODUCT_PACKAGES += \
+    CustomFontPixelLauncherOverlay \
     DocumentsUIOverlay \
     NetworkStackOverlay
 
