@@ -99,6 +99,10 @@ endif
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.control_privapp_permissions=log
 
+# Google Photos Pixel Exclusive XML
+PRODUCT_COPY_FILES += \
+    vendor/candy/prebuilt/common/etc/sysconfig/pixel_2016_exclusive.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_2016_exclusive.xml
+
 # Overlay
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural;com.google.android.systemui.gxoverlay
