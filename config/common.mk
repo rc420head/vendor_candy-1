@@ -73,10 +73,6 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
     persist.sys.sf.disable_blurs=1
 endif
 
-# Some permissions
-PRODUCT_COPY_FILES += \
-    vendor/candy/config/permissions/privapp-permissions-lineagehw.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-lineagehw.xml
-
 # Enable Android Beam on all targets
 PRODUCT_COPY_FILES += \
     vendor/candy/config/permissions/android.software.nfc.beam.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.software.nfc.beam.xml
@@ -119,6 +115,11 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # Google Photos Pixel Exclusive XML
 PRODUCT_COPY_FILES += \
     vendor/candy/prebuilt/common/etc/sysconfig/pixel_2016_exclusive.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_2016_exclusive.xml
+
+# Lineage Hardware
+PRODUCT_COPY_FILES += \
+    vendor/candy/config/permissions/privapp-permissions-lineagehw.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-lineagehw.xml \
+    vendor/candy/config/permissions/org.lineageos.health.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/org.lineageos.health.xml
 
 # Overlay
 PRODUCT_PRODUCT_PROPERTIES += \
