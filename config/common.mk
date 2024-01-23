@@ -1,4 +1,4 @@
-# Allow vendor/extra to override any property by setting it first
+\# Allow vendor/extra to override any property by setting it first
 $(call inherit-product-if-exists, vendor/extra/product.mk)
 
 PRODUCT_BRAND ?= CandyRoms
@@ -264,3 +264,5 @@ PRODUCT_PROPERTY_OVERRIDES := \
 PRODUCT_PACKAGES += \
     Aperture \
     CandyWallpaperStub
+
+include vendor/candy/config/pixel_props.mk
