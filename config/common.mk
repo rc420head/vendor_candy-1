@@ -1,4 +1,4 @@
-\\# Allow vendor/extra to override any property by setting it first
+# Allow vendor/extra to override any property by setting it first
 $(call inherit-product-if-exists, vendor/extra/product.mk)
 
 PRODUCT_BRAND ?= CandyRoms
@@ -166,6 +166,10 @@ endif
 
 # Certification
 $(call inherit-product-if-exists, vendor/certification/config.mk)
+
+# Config
+PRODUCT_PACKAGES += \
+    SimpleDeviceConfig
 
 # Extra tools in candy
 PRODUCT_PACKAGES += \
