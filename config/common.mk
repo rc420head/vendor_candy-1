@@ -288,3 +288,6 @@ PRODUCT_PACKAGES += \
 
 include vendor/candy/config/pixel_props.mk
 include vendor/candy/config/packages.mk
+
+# BootAnimation
+include vendor/candy/config/bootanimation.mk
